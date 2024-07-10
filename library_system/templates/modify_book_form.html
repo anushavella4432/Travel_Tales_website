@@ -1,0 +1,27 @@
+<!-- modify_book_form.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+        <h1>Modify Book</h1>
+        <form action="{{ url_for('modify_book') }}" method="POST">
+            <label for="bno">Book Number:</label><br>
+            <input type="number" id="bno" name="bno" required><br><br>
+            
+            <label for="price">New Book Price:</label><br>
+            <input type="number" step="0.01" id="price" name="price" required><br><br>
+            
+            <input type="submit" value="Modify Book" class="btn">
+        </form>
+        <a href="{{ url_for('admin_menu') }}" class="btn">Back to Admin Menu</a>
+    </div></div>
+</body>
+</html>

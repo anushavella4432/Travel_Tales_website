@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Book Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+        <h1>Search Book Result</h1>
+        <div>
+            {{ book_info | safe }}
+        </div>
+        <a href="{{ url_for('main_menu') }}" class="btn btn-secondary">Back to Main Menu</a>
+    </div></div>
+</body>
+</html>

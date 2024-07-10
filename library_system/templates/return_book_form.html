@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+        <h2>Return Book</h2>
+        <form method="POST" action="{{ url_for('return_book') }}">
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required>
+            <br><br>
+            <label for="book_id">Book ID:</label>
+            <input type="text" id="book_id" name="book_id" required>
+            <br><br>
+            <button type="submit" class="btn btn-primary">Return Book</button>
+        </form>
+        <a href="{{ url_for('main_menu') }}" class="btn">Back to Main Menu</a>
+    </div></div>
+</body>
+</html>

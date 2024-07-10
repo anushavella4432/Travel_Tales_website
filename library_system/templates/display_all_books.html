@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <h1>All Books</h1>
+            {% for book in books %}
+                <div class="book">
+                    <p><strong>Book title:</strong> {{ book.title }}</p>
+                    <p><strong>Book ID:</strong> {{ book.id }}</p>
+                    <p><strong>Author:</strong> {{ book.author }}</p>
+                    <p><strong>Available:</strong> {{ 'Yes' if book.available else 'No' }}</p>
+                </div>
+                <hr>
+            {% endfor %}
+            <a href="{{ url_for('main_menu') }}" class="btn btn-primary">Back to Main Menu</a>
+        </div>
+    </div>
+</body>
+</html>

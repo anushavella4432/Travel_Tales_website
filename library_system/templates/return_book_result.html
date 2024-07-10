@@ -1,0 +1,21 @@
+
+<!-- templates/return_book_result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+        <h2>Return Book Result</h2>
+        <p>{{ result }}</p>
+        <a href="{{ url_for('homepage') }}" class="btn btn-primary">Back to Home</a>
+    </div></div>
+</body>
+</html>
+<form method="POST" action="{{ url_for('issue_book') }}">
+</form>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Students</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <h1>All Students</h1>
+            {% for student in students %}
+                <div class="student">
+                    <p><strong>Student name:</strong> {{ student.name }}</p>
+                    <p><strong>Student roll number:</strong> {{ student.id }}</p>
+                    <p><strong>Class:</strong> {{ student.class }}</p>
+                    <p><strong>No of books issued:</strong> {{ student.books_issued }}</p>
+                    <p><strong>Date of issue:</strong> {{ student.issue_date }}</p>
+                    <p><strong>Date of return:</strong> {{ student.return_date }}</p>
+                    <p><strong>Fine to be paid:</strong> {{ student.fine }}</p>
+                </div>
+                <hr>
+            {% endfor %}
+            <a href="{{ url_for('main_menu') }}" class="btn btn-primary">Back to Main Menu</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color: #add8e6; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background-color: rgb(211, 167, 193); padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center;">
+            <h2 >Please login to Library Management System</h2>
+            <form action="/login" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login" class="btn btn-primary btn-lg btn-block">
+            </form>
+            {% if error %}
+            <p class="error">{{ error }}</p>
+            {% endif %}
+    </div>
+</body>
+</html>

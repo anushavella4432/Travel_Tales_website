@@ -1,0 +1,30 @@
+<!-- templates/add_book.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+    <div class="content-box">
+        <h1>Add Book</h1>
+        <form action="{{ url_for('add_book') }}" method="POST">
+            <label for="name">Book Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="bno">Book Number:</label>
+            <input type="number" id="bno" name="bno" required><br><br>
+            <label for="author">Author Name:</label>
+            <input type="text" id="author" name="author" required><br><br>
+            <label for="price">Book Price:</label>
+            <input type="number" id="price" name="price" step="0.01" required><br><br>
+            <label for="qty">Quantity:</label>
+            <input type="number" id="qty" name="qty" required><br><br>
+            <input type="submit" value="Add Book">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
