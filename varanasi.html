@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varanasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body class="varanasi-background">
+    <header>
+        <div class="logo">Travel Tales</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="city-details">
+            <h1>Varanasi, Uttar Pradesh</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/varanasi1.webp" alt="Varanasi"></div>
+                    <div class="swiper-slide"><img src="images/varanasi2.jpg" alt="Varanasi"></div>
+                    <div class="swiper-slide"><img src="images/varanasi3.avif" alt="Varanasi"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <p class="special-font">"Varanasi, also known as Kashi or Benares, is one of the oldest continuously inhabited cities in the world. Located on the banks of the Ganges River, Varanasi is a spiritual center for Hindus, attracting millions of pilgrims and visitors each year. The city is renowned for its ghats, where rituals and ceremonies are performed daily, as well as its narrow winding streets, vibrant markets, and historic temples. Varanasi offers a unique and profound experience, where life and death coexist in harmony along the sacred river."</p>
+        </section>
+        
+        <section class="flight-selection">
+            <div class="external-content">
+                <object type="text/html" data="flight_selection.html" width="100%" height="400px"></object>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TravelSite. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedarnath</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body class="kedarnath-background">
+    <header>
+        <div class="logo">Travel Tales</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="city-details">
+            <h1>Kedarnath, Uttarakhand</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/kedarnath1.jpg" alt="Kedarnath"></div>
+                    <div class="swiper-slide"><img src="images/kedarnath2.jpg" alt="Kedarnath"></div>
+                    <div class="swiper-slide"><img src="images/kedarnath3.jpg" alt="Kedarnath"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <p class="special-font">"Kedarnath, a sacred town nestled in the Himalayas of Uttarakhand, is one of the holiest pilgrimage sites in India. Home to the famous Kedarnath Temple, dedicated to Lord Shiva, the town attracts thousands of devotees every year. Surrounded by majestic snow-capped peaks and serene landscapes, Kedarnath offers a spiritual and tranquil retreat. The journey to Kedarnath is both a physical and spiritual adventure, with breathtaking views and a profound sense of devotion."</p>
+        </section>
+        
+        <section class="flight-selection">
+            <div class="external-content">
+                <object type="text/html" data="flight_selection.html" width="100%" height="400px"></object>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TravelSite. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

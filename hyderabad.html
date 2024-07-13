@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body class="hyderabad-background">
+    <header>
+        <div class="logo">Travel Tales</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="city-details">
+            <h1>Hyderabad, Telangana</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/hyder1.jpg" alt="Hyderabad"></div>
+                    <div class="swiper-slide"><img src="images/hyder2.jpg" alt="Hyderabad"></div>
+                    <div class="swiper-slide"><img src="images/hyder3.jpg" alt="Hyderabad"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <p class="special-font">"Hyderabad, the capital city of Telangana, is a bustling metropolis known for its rich history, culture, and cuisine. The city seamlessly blends its historical legacy with modern urban development. Hyderabad is famous for its iconic landmarks like the Charminar, Golconda Fort, and the opulent Chowmahalla Palace. The city's vibrant bazaars, delicious Hyderabadi biryani, and hospitable locals make it a delightful destination for travelers."</p>
+        </section>
+        
+        <section class="flight-selection">
+            <div class="external-content">
+                <object type="text/html" data="flight_selection.html" width="100%" height="400px"></object>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TravelSite. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

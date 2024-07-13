@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - TravelSite</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const flight = urlParams.get('flight');
+            const packageType = urlParams.get('package');
+
+            document.getElementById('flight').textContent = flight.charAt(0).toUpperCase() + flight.slice(1);
+            document.getElementById('package').textContent = packageType.charAt(0).toUpperCase() + packageType.slice(1);
+        }
+    </script>
+</head>
+<body class="booking-background">
+    <main>
+        <section class="booking">
+            <h2 align="center">Booking Details</h2>
+            <p align="center">Flight: <span id="flight"></span></p>
+            <p align="center">Package: <span id="package"></span></p>
+            <form action="submit_booking.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

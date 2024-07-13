@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney,Australia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> <!-- Example: Playfair Display -->
+</head>
+<body class="sydney-background">
+    <header>
+        <div class="logo">TravelSite</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="city-details">
+            <h1>Sydney,Australia</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/sydney1.webp" alt="Sydney"></div>
+                    <div class="swiper-slide"><img src="images/sydney2.jpeg" alt="Sydney"></div>
+                    <div class="swiper-slide"><img src="images/sydney3.webp" alt="Sydney"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <p class="special-font">"Sydney, with its iconic Sydney Opera House and Harbour Bridge, is a gateway to Australia's natural wonders and urban vibrancy. Relax on famous beaches, explore coastal walks, and experience the city's multicultural dining scene."</p>
+        </section>
+        <!-- Flight Selection Section - External Content -->
+        <section class="flight-selection">
+            <div class="external-content">
+                <!-- Embedding external content from flight_selection.html -->
+                <object type="text/html" data="flight_selection.html" width="100%" height="400px"></object>
+            </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 TravelSite. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+</body>
+</html>

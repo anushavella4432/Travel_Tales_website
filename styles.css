@@ -1,0 +1,500 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.featured-destinations, .testimonials, .contact, .destinations,.national-destinations{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.destination-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img {
+    width: 100%;
+    height: auto;
+}
+
+.destination-card h3 {
+    margin: 15px 0;
+    color: #ff6347; /* tomato */
+}
+
+.destination-card p {
+    padding: 0 15px 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    text-align: left;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+body.booking-background {
+    background: url('images/bookingflight.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.spicejet-background {
+    background: url('images/spicejet.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.emirates-background {
+    background: url('images/emirates.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.airindia-background {
+    background: url('images/airindia.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+body.london-background {
+    background: url('images/london-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.newyork-background {
+    background: url('images/newyork-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.paris-background {
+    background: url('images/paris-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.kyoto-background {
+    background: url('images/kyoto-bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.andaman-background {
+    background: url('images/andaman-bg.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bali-background {
+    background: url('images/bali-bg.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.capetown-background {
+    background: url('images/capetown-bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.venice-background {
+    background: url('images/venice-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.santorini-background {
+    background: url('images/santaroni-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.dubai-background {
+    background: url('images/dubai-bg.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.sydney-background {
+    background: url('images/sydney-bg.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.machipecchu-background {
+    background: url('images/macchiperu-bg.jpg')no-repeat center center fixed;
+    background-size: cover;
+}
+body.indigo-background{
+    background: url('images/indigo-bg.avif')no-repeat center center fixed;
+    background-size: cover;
+}
+body.manali-background{
+    background: url('images/manali-bg.jpg')no-repeat center center fixed;
+    background-size: cover;
+}
+body.goa-background {
+    background: url('images/goa-bg.jpg') no-repeat center center/cover;
+}
+
+body.kedarnath-background {
+    background: url('images/kedarnath-bg.jpg') no-repeat center center/cover;
+}
+
+body.varanasi-background {
+    background: url('images/varanasi-bg.jpg') no-repeat center center/cover;
+}
+
+body.jaipur-background {
+    background: url('images/jaipur-bg.jpg') no-repeat center center/cover;
+}
+
+body.hyderabad-background {
+    background: url('images/hyder-bg.webp') no-repeat center center/cover;
+}
+body.contact-background {
+    background: url('images/contact.jpg') no-repeat center center/cover;
+}
+main {
+    padding: 20px;
+}
+
+.food-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-category {
+    flex: 1 1 280px; /* Adjust width as needed */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item h3 {
+    color: #ff6347; /* Tomato color */
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.city-details {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 800px;
+    color: #fff;
+}
+
+.city-details h1 {
+    font-size: 2.5em;
+    color: #ff6347; /* tomato */
+    margin-bottom: 20px;
+}
+
+.city-details p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.special-font {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.flight_selection-background {
+    background-color: rgba(248, 248, 248, 0.418); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flight-selection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.1; 
+}
+.flight-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flight-option {
+    background-color:#fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flight-option h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.flight-option a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.flight-option a:hover {
+    text-decoration: underline;
+}
+
+.package{
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.package h4 {
+    margin-top: 0;
+}
+
+.package ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package ul li {
+    margin: 5px 0;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Booking Form Styles */
+.booking form {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.booking form input,
+.booking form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.booking form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.booking form button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #141111;
+}
+
+.confirmation p {
+    font-size: 1.2em;
+    color:black
+}
+/* External Content Styles */
+.external-content object {
+    width: 100%;
+    border: none;
+}
+/*.confirmation {
+    background-color: rgba(204, 154, 254, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+}*/
+/* Footer Styles */
+footer {
+    background-color: #141111;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.view-more-link {
+    display: inline-block;
+    color: #007BFF; /* Change color as per your design */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-right: 20px; /* Space for the arrow */
+}
+
+.view-more-container {
+    text-align: right; /* Aligns the view more link to the right */
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.view-more-link {
+    color: #007BFF; /* Change color as per your design */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-more-link .arrow {
+    margin-left: 5px; /* Adjust space between text and arrow */
+}
